@@ -1,0 +1,21 @@
+/* 
+Challenge: 
+Make the button look like Twitter's "Following" button!
+(Except for the font)
+
+Hints:
+border color: #cfd9de
+text color: #0f1419
+Remember the font-weight!
+*/
+
+button{
+    border-color: #cfd9de;
+    font-weight: lighter;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}

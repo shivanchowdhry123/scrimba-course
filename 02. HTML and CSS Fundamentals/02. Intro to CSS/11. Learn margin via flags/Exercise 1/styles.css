@@ -1,0 +1,22 @@
+body {
+    margin:0;
+}
+
+.red {
+    background: red;
+    height: 100px;
+    /*Challenge:
+    Add 100px of margin on the bottom of the red box. */
+    margin-bottom: 100px;
+}
+
+.blue {
+    background: blue;
+    height: 100px;
+}
+
+.green {
+    background: green;
+    height: 100px;
+}
+
