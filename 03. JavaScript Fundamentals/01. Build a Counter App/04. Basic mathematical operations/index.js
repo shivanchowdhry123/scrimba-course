@@ -8,6 +8,9 @@
 
 
 // 1. Create two variables, myAge and humanDogRatio
-// 2. Multiply the two together and store the result in myDogAge 
+let myAge = 13
+let humanDogRatio = 7
+// 2. Multiply the two together and store the result in myDogAge
+let myDogAge = myAge * humanDogRatio 
 // 3. Log myDogAge to the console
-
+console.log(myDogAge) 
