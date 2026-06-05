@@ -1,6 +1,7 @@
 let username = "per"
+let message = 'You have tree new notifications'
 
-// Create a variable, message, that stores the string: "You have tree new notifications"
+console.log(message + ','+ username + '!')
 
-console.log(username)
-
+//create a variable,messageToUser, that contains what we have logged
+let messageToUser = message + ','+ username + '!'
