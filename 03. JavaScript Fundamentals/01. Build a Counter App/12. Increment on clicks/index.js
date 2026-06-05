@@ -14,6 +14,3 @@ function increment() {
     count = count + 1
     console.log(count)
 }
-
-
-
