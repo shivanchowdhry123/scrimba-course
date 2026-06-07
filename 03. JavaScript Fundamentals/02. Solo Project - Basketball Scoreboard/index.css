@@ -1,8 +1,146 @@
 body {
     margin: 0;
+    padding: 0;
+    background-color: #1a1a2e;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
 }
 
-.container {
+/* Global Controls Layout */
+.top-controls {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    background-color: #1a1a2e;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 30px 30px 30px 30px rgba(1, 0.25, 0.25, 1);
+}
+
+.period-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.small-display {
+    background-color: #1a1a2e;
+    color: #f94c57;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+    padding: 2px 12px;
+    border-radius: 5px;
+}
+
+#reset-btn {
+    background-color: #f94c57;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#reset-btn:hover {
+    background-color: #d63c45;
+}
+
+/* Scoreboard Main Container */
+.scoreboard-container {
+    display: flex;
+    gap: 40px;
+    background-color: #1a1a2e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 30px 30px 30px 30px rgba(1, 0.25, 0.25, 1);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Leader Highlight Class */
+.leader {
+    border-color: #00ff88;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+    letter-spacing: 2px;
+}
+
+.score-display {
+    background-color: #000000;
+    color: #f94c57;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 15px rgba(249, 76, 87, 0.3);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #9a94b8;
+    color: #9a94b8;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Foul Layout styling */
+.foul-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #9a94b8;
+    font-weight: bold;
+    border-top: 1px solid #222;
+    padding-top: 15px;
+}
+
+.foul-btn {
+    padding: 2px 8px;
+    font-size: 0.9rem;
 }
