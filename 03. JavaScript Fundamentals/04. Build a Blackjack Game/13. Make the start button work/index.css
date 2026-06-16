@@ -22,6 +22,12 @@ width      - 150px
 background - goldenrod
  */
  
-button {
+.start_btn {
+    color: #016f32;
+    width: 150px;
+    padding: 5px;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 2px;
 
 }
