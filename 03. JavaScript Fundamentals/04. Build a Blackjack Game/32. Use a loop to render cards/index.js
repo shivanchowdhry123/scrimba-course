@@ -14,7 +14,10 @@ function startGame() {
 }
 
 function renderGame() {
-    cardsEl.textContent = "Cards: "
+    for (let i =0 ; i < cards.length; i += 1) {
+        cardsEl.textContent += cards[i] + " "
+    }
+
     // Create a for loop that renders out all the cards instead of just two
     
     
