@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1 class="heading">Generate a <br><span class="accent-text">random password</span></h1>
+        <p class="subheading">Never use an insecure password again.</p>
+        
+        <div class="controls-container">
+            <div class="control-row">
+                <label for="lengthRange">Password Length</label>
+                <div class="range-wrapper">
+                    <input type="range" id="lengthRange" min="6" max="24" value="12">
+                    <span class="length-val" id="lengthVal">12</span>
+                </div>
+            </div>
+
+            <div class="toggles-grid">
+                <div class="control-row">
+                    <label for="includeNumbers">Numbers</label>
+                    <label class="switch">
+                        <input type="checkbox" id="includeNumbers" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="control-row">
+                    <label for="includeSymbols">Symbols</label>
+                    <label class="switch">
+                        <input type="checkbox" id="includeSymbols" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <button class="generate-btn" id="generateBtn">Generate passwords</button>
+        
+        <hr class="divider">
+
+        <div class="display-grid">
+            <div class="password-box" id="passBox1" title="Click to copy"></div>
+            <div class="password-box" id="passBox2" title="Click to copy"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

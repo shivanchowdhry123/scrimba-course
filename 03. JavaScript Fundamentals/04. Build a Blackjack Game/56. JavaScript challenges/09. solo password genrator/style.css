@@ -1,0 +1,210 @@
+:root {
+    --bg-color: #1a2332;
+    --text-white: #ffffff;
+    --text-muted: #94a3b8;
+    --accent-green: #10b981;
+    --accent-green-hover: #059669;
+    --box-bg: #273549;
+    --control-bg: #202b3c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 540px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.heading {
+    color: var(--text-white);
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.accent-text {
+    color: var(--accent-green);
+}
+
+.subheading {
+    color: var(--text-muted);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+/* Controls Styling */
+.controls-container {
+    margin-bottom: 30px;
+}
+
+.control-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.control-row label {
+    color: var(--text-white);
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.range-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 60%;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: var(--accent-green);
+    cursor: pointer;
+    background: transparent;
+}
+
+.length-val {
+    color: var(--accent-green);
+    font-weight: 700;
+    font-size: 1.1rem;
+    min-width: 20px;
+}
+
+.toggles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+/* Custom Minimal Toggle Switches */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #2e3e56;
+    transition: 0.25s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.25s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--accent-green);
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+/* Button & Output layouts */
+.generate-btn {
+    background-color: var(--accent-green);
+    color: var(--text-white);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 35px;
+}
+
+.generate-btn:hover {
+    background-color: var(--accent-green-hover);
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 30px;
+}
+
+.display-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.password-box {
+    background-color: var(--box-bg);
+    color: var(--accent-green);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 16px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    user-select: all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s ease;
+}
+
+.password-box:hover {
+    background-color: #2e3e56;
+}
+
+.password-box.copied {
+    color: var(--text-white);
+    background-color: var(--accent-green-hover);
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2.2rem;
+    }
+    .display-grid, .toggles-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .range-wrapper {
+        width: 50%;
+    }
+}
