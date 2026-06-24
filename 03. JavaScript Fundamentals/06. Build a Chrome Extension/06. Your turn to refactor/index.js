@@ -9,6 +9,3 @@ inputBtn.addEventListener("click", function() {
     console.log("Button clicked!")
     console.log(inputEl.value)
 })
-
-
-
