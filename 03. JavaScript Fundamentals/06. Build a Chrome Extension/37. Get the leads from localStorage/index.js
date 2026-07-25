@@ -7,6 +7,7 @@ const ulEl = document.getElementById("ul-el")
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 // Store it in a variable, leadsFromLocalStorage
 // Log out the variable
+console.log(localStorage.getItem("myLeads"))
 
 
 inputBtn.addEventListener("click", function() {
