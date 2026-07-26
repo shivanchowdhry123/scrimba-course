@@ -9,5 +9,12 @@
 
 // Use both a for loop and a template string to solve the challenge
 function generateSentence(desc, arr) {
-    
+    let finalString = `There are ${arr.length} ${desc} are`
+    for(let i=0; i<arr.length; i++) {
+        finalString += arr[i]
+    }
+    return finalString
 }
+
+console.log(generateSentence("largest countries", ["China", "India", "USA"]))
+console.log(generateSentence("best fruits", ["Apples", "Bananas"]))

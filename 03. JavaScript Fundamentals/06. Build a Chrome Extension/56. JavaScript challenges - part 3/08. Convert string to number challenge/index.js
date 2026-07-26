@@ -3,5 +3,7 @@
 // Google the error message if you're unsure about how to do it
 
 const totalPrice = "420.69235632455"
+let numTotalPrice = Number(totalPrice)
 const btn = document.getElementById("buy-btn")
-btn.textContent = `Buy €${ totalPrice.toFixed(2) }`
+btn.textContent = `Buy €${ numTotalPrice.toFixed(2) }`
+

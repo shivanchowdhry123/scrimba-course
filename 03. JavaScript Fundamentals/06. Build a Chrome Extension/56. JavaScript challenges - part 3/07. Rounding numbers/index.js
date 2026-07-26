@@ -4,5 +4,5 @@
 
 const totalPrice = 420.69235632455
 const btn = document.getElementById("purchase-btn")
-btn.textContent = `Buy €${ totalPrice }`
+btn.textContent = `Buy ₹${ Math.round(totalPrice * 100) / 100 }`
 
